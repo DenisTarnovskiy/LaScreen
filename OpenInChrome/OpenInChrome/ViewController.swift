@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     }
     
     func detectChromeInstallation() {
-        let inputURL = URL(string: "https://www.google.com")!
+        let inputURL = URL(string: "https://demo-tecsynt.atiim.com")!
         if OpenInChromeController.sharedInstance.isChromeInstalled() {
             let callbackURL = URL(string: "opcsample://")
             if !OpenInChromeController.sharedInstance.openInChrome(inputURL, callbackURL: callbackURL, createNewTab: true) {
