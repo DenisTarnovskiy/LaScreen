@@ -26,9 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         let mainViewController = self.window?.rootViewController as? ViewController
-        if (mainViewController != nil) {
-            mainViewController!.log("[Callback] Called with URL: \(url.absoluteString)\n")
-        }
+//        if (mainViewController != nil) {
+//            mainViewController!.log("[Callback] Called with URL: \(url.absoluteString)\n")
+//        }
         return true
     }
 }
