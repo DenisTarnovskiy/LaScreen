@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		790CE8561AFB2306007EF8B1 /* OpenInChrome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenInChrome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		790CE8561AFB2306007EF8B1 /* AtiimChrome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtiimChrome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		790CE87B1AFB232B007EF8B1 /* OpenInChromeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenInChromeController.swift; sourceTree = "<group>"; };
 		AAFAC1CD1E264A46002F2892 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFAC1CF1E264A46002F2892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		790CE8571AFB2306007EF8B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				790CE8561AFB2306007EF8B1 /* OpenInChrome.app */,
+				790CE8561AFB2306007EF8B1 /* AtiimChrome.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,9 +71,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		790CE8551AFB2306007EF8B1 /* OpenInChrome */ = {
+		790CE8551AFB2306007EF8B1 /* AtiimChrome */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 790CE8751AFB2306007EF8B1 /* Build configuration list for PBXNativeTarget "OpenInChrome" */;
+			buildConfigurationList = 790CE8751AFB2306007EF8B1 /* Build configuration list for PBXNativeTarget "AtiimChrome" */;
 			buildPhases = (
 				790CE8521AFB2306007EF8B1 /* Sources */,
 				790CE8531AFB2306007EF8B1 /* Frameworks */,
@@ -83,9 +83,9 @@
 			);
 			dependencies = (
 			);
-			name = OpenInChrome;
+			name = AtiimChrome;
 			productName = OpenInChromeSwiftSample;
-			productReference = 790CE8561AFB2306007EF8B1 /* OpenInChrome.app */;
+			productReference = 790CE8561AFB2306007EF8B1 /* AtiimChrome.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				790CE8551AFB2306007EF8B1 /* OpenInChrome */,
+				790CE8551AFB2306007EF8B1 /* AtiimChrome */,
 			);
 		};
 /* End PBXProject section */
@@ -269,7 +269,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/OpenInChrome/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.ce.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.open.chrome.chrome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -288,7 +288,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/OpenInChrome/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.ce.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.open.chrome.chrome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -306,7 +306,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		790CE8751AFB2306007EF8B1 /* Build configuration list for PBXNativeTarget "OpenInChrome" */ = {
+		790CE8751AFB2306007EF8B1 /* Build configuration list for PBXNativeTarget "AtiimChrome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				790CE8761AFB2306007EF8B1 /* Debug */,
