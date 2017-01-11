@@ -6,6 +6,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var webView: UIWebView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         detectChromeInstallation();
