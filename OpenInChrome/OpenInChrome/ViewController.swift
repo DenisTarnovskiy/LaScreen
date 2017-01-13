@@ -2,9 +2,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate {
     
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     var statusBarStyle: UIStatusBarStyle = .lightContent
 
     override func viewDidLoad() {
@@ -13,6 +14,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
 //        self.webView.scrollView.delegate = self;
         webView.scrollView.delegate = self
+        webView.delegate = self;
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
@@ -21,17 +23,31 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         detectChromeInstallation();
 
     }
+    
+    
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return statusBarStyle
     }
  
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        
         if (scrollView.contentOffset.y < 0){
             //reach top
             print("Reach Top")
             webView.reload()
+            indicator.startAnimating()}
+        
+        else {
+            indicator.stopAnimating();
+            
         }
+    }
+    
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        indicator.stopAnimating();
+    }
+    
+    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+        indicator.stopAnimating();
     }
     // MARK: - UIViewController
     
@@ -60,9 +76,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 //            }
 //        } else {
             self.webView.loadRequest(URLRequest.init(url: inputURL))
-          
+            indicator.startAnimating();
         }
     }
+
     
     func log(_ text: String) {
         NSLog(text)
