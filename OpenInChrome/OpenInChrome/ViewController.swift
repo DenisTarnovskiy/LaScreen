@@ -5,9 +5,11 @@ import UIKit
 class ViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var webView: UIWebView!
-    
+    var statusBarStyle: UIStatusBarStyle = .lightContent
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
 //        self.webView.scrollView.delegate = self;
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
@@ -17,7 +19,15 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         detectChromeInstallation();
 
     }
-//    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return statusBarStyle
+    }
+ 
+    
+    // MARK: - UIViewController
+    
+    
+    
 //    func scrollViewDidScroll(_ scrollView: UIScrollView) {
 //        if (scrollView.contentOffset.x > 0) {
 //            scrollView.contentOffset = CGPoint.init(x: 0, y: scrollView.contentOffset.y)
@@ -26,6 +36,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 //    
     func detectChromeInstallation() {
         let inputURL = URL(string: "https://demo-tecsynt.atiim.com")!
+        
 //        if OpenInChromeController.sharedInstance.isChromeInstalled() {
 //            let callbackURL = URL(string: "opcsample://")
 //            if !OpenInChromeController.sharedInstance.openInChrome(inputURL, callbackURL: callbackURL, createNewTab: true) {
