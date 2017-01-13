@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		790CE87C1AFB232B007EF8B1 /* OpenInChromeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790CE87B1AFB232B007EF8B1 /* OpenInChromeController.swift */; };
 		AAFAC1D41E264A46002F2892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFAC1CD1E264A46002F2892 /* AppDelegate.swift */; };
 		AAFAC1D51E264A46002F2892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFAC1CE1E264A46002F2892 /* Main.storyboard */; };
 		AAFAC1D61E264A46002F2892 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFAC1D01E264A46002F2892 /* Images.xcassets */; };
@@ -18,7 +17,6 @@
 
 /* Begin PBXFileReference section */
 		790CE8561AFB2306007EF8B1 /* AtiimWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtiimWeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		790CE87B1AFB232B007EF8B1 /* OpenInChromeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenInChromeController.swift; sourceTree = "<group>"; };
 		AAFAC1CD1E264A46002F2892 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFAC1CF1E264A46002F2892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAFAC1D01E264A46002F2892 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -42,7 +40,6 @@
 			isa = PBXGroup;
 			children = (
 				AAFAC1CC1E264A46002F2892 /* OpenInChrome */,
-				790CE87B1AFB232B007EF8B1 /* OpenInChromeController.swift */,
 				790CE8571AFB2306007EF8B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -144,7 +141,6 @@
 			files = (
 				AAFAC1D91E264A46002F2892 /* ViewController.swift in Sources */,
 				AAFAC1D41E264A46002F2892 /* AppDelegate.swift in Sources */,
-				790CE87C1AFB232B007EF8B1 /* OpenInChromeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

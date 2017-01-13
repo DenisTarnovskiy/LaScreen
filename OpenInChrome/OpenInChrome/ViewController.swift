@@ -11,6 +11,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
     var statusBarStyle: UIStatusBarStyle = .lightContent
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         webView.scrollView.addSubview(popup)
         webView.scrollView.delegate = self
@@ -20,7 +21,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        detectChromeInstallation();
+        firstStartLauchScreen();
     }
     
     
@@ -29,7 +30,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
     }
  
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        if (scrollView.contentOffset.y < -70) {
+        if (scrollView.contentOffset.y < -60) {
             //reach top
             print("Reach Top")
             
@@ -98,7 +99,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
         return (isReachable && !needsConnection)
     }
     
-    func detectChromeInstallation() {
+   func firstStartLauchScreen() {
         let flag = self.isInternetAvailable()
         if flag {
             let inputURL = URL(string: "https://demo-tecsynt.atiim.com")!
@@ -109,7 +110,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
                 self.popup.isHidden = false
             }
         }
-        }
+       }
     }
 
     
