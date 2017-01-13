@@ -9,8 +9,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // var refreshControl = UIRefreshControl()
 
 //        self.webView.scrollView.delegate = self;
+        webView.scrollView.delegate = self
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
@@ -23,7 +25,14 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         return statusBarStyle
     }
  
-    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        
+        if (scrollView.contentOffset.y < 0){
+            //reach top
+            print("Reach Top")
+            webView.reload()
+        }
+    }
     // MARK: - UIViewController
     
     
