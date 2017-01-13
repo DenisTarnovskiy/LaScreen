@@ -30,16 +30,13 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
     }
  
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        if (scrollView.contentOffset.y < 0){
+        if (scrollView.contentOffset.y < -70){
             //reach top
             print("Reach Top")
             webView.reload()
             indicator.startAnimating()}
         
-        else {
-            indicator.stopAnimating();
-            
-        }
+      
     }
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
