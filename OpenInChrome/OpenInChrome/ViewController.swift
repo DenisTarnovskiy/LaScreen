@@ -1,6 +1,7 @@
 
 
 import UIKit
+
 import SystemConfiguration
 class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate {
     
@@ -11,7 +12,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        webView.scrollView.addSubview(popup)
         webView.scrollView.delegate = self
         webView.delegate = self;
         self.navigationController?.setNavigationBarHidden(true, animated: false)
@@ -40,14 +41,19 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
             }
             
             let flag = self.isInternetAvailable()
+            
             if flag {
                 if !self.popup.isHidden {
                     self.popup.isHidden = true
+
                 }
                 indicator.startAnimating()
             } else {
-                webView.stringByEvaluatingJavaScript(from: "document.open();document.close()")
+               webView.stringByEvaluatingJavaScript(from: "document.open();document.close()")
+               // webView.loadRequest(NSURLRequest(url: NSURL(string: "")! as URL) as URLRequest)
+
                 if self.popup.isHidden {
+
                     self.popup.isHidden = false
                 }
             }
@@ -57,6 +63,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
         indicator.stopAnimating();
+      //  popup.removeFromSuperview()
         if !self.popup.isHidden {
             self.popup.isHidden = true
         }
