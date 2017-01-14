@@ -1,7 +1,6 @@
 
 
 import UIKit
-
 import SystemConfiguration
 class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate {
     
@@ -31,7 +30,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
  
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         if (scrollView.contentOffset.y < -60) {
-            //reach top
             print("Reach Top")
             
             if (self.webView.request != nil) {
@@ -46,7 +44,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
             if flag {
                 if !self.popup.isHidden {
                     self.popup.isHidden = true
-
                 }
                 indicator.startAnimating()
             } else {
