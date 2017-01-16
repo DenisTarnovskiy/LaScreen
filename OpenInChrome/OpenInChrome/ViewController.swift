@@ -28,6 +28,12 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
         return statusBarStyle
     }
  
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    
+    if (webView.scrollView.contentOffset.y >= webView.scrollView.contentSize.height - webView.scrollView.frame.size.height) {
+        webView.scrollView.setContentOffset(CGPoint(x: webView.scrollView.contentOffset.x, y: webView.scrollView.contentSize.height - webView.scrollView.frame.size.height), animated: false)
+    }
+    }
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         if (scrollView.contentOffset.y < -60) {
             print("Reach Top")
@@ -45,10 +51,9 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
                 if !self.popup.isHidden {
                     self.popup.isHidden = true
                 }
-                indicator.startAnimating()
+              indicator.stopAnimating()
             } else {
                webView.stringByEvaluatingJavaScript(from: "document.open();document.close()")
-               // webView.loadRequest(NSURLRequest(url: NSURL(string: "")! as URL) as URLRequest)
 
                 if self.popup.isHidden {
 
@@ -56,19 +61,28 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
                 }
             }
             }
-    }
+          }
 
-    
-    func webViewDidFinishLoad(_ webView: UIWebView) {
+    func webViewDidStartLoad(_ webView: UIWebView) {
         indicator.stopAnimating();
-      //  popup.removeFromSuperview()
+        //  popup.removeFromSuperview()
         if !self.popup.isHidden {
             self.popup.isHidden = true
         }
     }
+
+//    func webViewDidFinishLoad(_ webView: UIWebView) {
+//        indicator.stopAnimating();
+//      //  popup.removeFromSuperview()
+//        if !self.popup.isHidden {
+//            self.popup.isHidden = true
+//        }
+//    }
     
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
         indicator.stopAnimating();
+        self.webView.stringByEvaluatingJavaScript(from: "document.open();document.close()")
+
         if self.popup.isHidden {
             self.popup.isHidden = false
         }
