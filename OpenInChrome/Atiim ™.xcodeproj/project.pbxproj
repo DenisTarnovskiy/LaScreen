@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		790CE8561AFB2306007EF8B1 /* Atiim OKR ™.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Atiim OKR ™.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		790CE8561AFB2306007EF8B1 /* Atiim ™.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Atiim ™.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFAC1CD1E264A46002F2892 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFAC1CF1E264A46002F2892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAFAC1D01E264A46002F2892 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		790CE8571AFB2306007EF8B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				790CE8561AFB2306007EF8B1 /* Atiim OKR ™.app */,
+				790CE8561AFB2306007EF8B1 /* Atiim ™.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,9 +69,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		790CE8551AFB2306007EF8B1 /* Atiim OKR ™ */ = {
+		790CE8551AFB2306007EF8B1 /* Atiim ™ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 790CE8751AFB2306007EF8B1 /* Build configuration list for PBXNativeTarget "Atiim OKR ™" */;
+			buildConfigurationList = 790CE8751AFB2306007EF8B1 /* Build configuration list for PBXNativeTarget "Atiim ™" */;
 			buildPhases = (
 				790CE8521AFB2306007EF8B1 /* Sources */,
 				790CE8531AFB2306007EF8B1 /* Frameworks */,
@@ -81,9 +81,9 @@
 			);
 			dependencies = (
 			);
-			name = "Atiim OKR ™";
+			name = "Atiim ™";
 			productName = OpenInChromeSwiftSample;
-			productReference = 790CE8561AFB2306007EF8B1 /* Atiim OKR ™.app */;
+			productReference = 790CE8561AFB2306007EF8B1 /* Atiim ™.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 790CE8511AFB2306007EF8B1 /* Build configuration list for PBXProject "Atiim OKR ™" */;
+			buildConfigurationList = 790CE8511AFB2306007EF8B1 /* Build configuration list for PBXProject "Atiim ™" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -116,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				790CE8551AFB2306007EF8B1 /* Atiim OKR ™ */,
+				790CE8551AFB2306007EF8B1 /* Atiim ™ */,
 			);
 		};
 /* End PBXProject section */
@@ -301,7 +301,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		790CE8511AFB2306007EF8B1 /* Build configuration list for PBXProject "Atiim OKR ™" */ = {
+		790CE8511AFB2306007EF8B1 /* Build configuration list for PBXProject "Atiim ™" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				790CE8731AFB2306007EF8B1 /* Debug */,
@@ -310,7 +310,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		790CE8751AFB2306007EF8B1 /* Build configuration list for PBXNativeTarget "Atiim OKR ™" */ = {
+		790CE8751AFB2306007EF8B1 /* Build configuration list for PBXNativeTarget "Atiim ™" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				790CE8761AFB2306007EF8B1 /* Debug */,
