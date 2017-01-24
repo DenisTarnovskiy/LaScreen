@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		790CE8561AFB2306007EF8B1 /* AtiimWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtiimWeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		790CE8561AFB2306007EF8B1 /* Atiim OKR ™.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Atiim OKR ™.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFAC1CD1E264A46002F2892 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFAC1CF1E264A46002F2892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAFAC1D01E264A46002F2892 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		790CE84D1AFB2306007EF8B1 = {
 			isa = PBXGroup;
 			children = (
-				AAFAC1CC1E264A46002F2892 /* OpenInChrome */,
+				AAFAC1CC1E264A46002F2892 /* Atiim Pulse OKR ™ */,
 				790CE8571AFB2306007EF8B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,12 +47,12 @@
 		790CE8571AFB2306007EF8B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				790CE8561AFB2306007EF8B1 /* AtiimWeb.app */,
+				790CE8561AFB2306007EF8B1 /* Atiim OKR ™.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AAFAC1CC1E264A46002F2892 /* OpenInChrome */ = {
+		AAFAC1CC1E264A46002F2892 /* Atiim Pulse OKR ™ */ = {
 			isa = PBXGroup;
 			children = (
 				AAFAC1CD1E264A46002F2892 /* AppDelegate.swift */,
@@ -62,15 +62,16 @@
 				AAFAC1D21E264A46002F2892 /* LaunchScreen.storyboard */,
 				AAFAC1D31E264A46002F2892 /* ViewController.swift */,
 			);
+			name = "Atiim Pulse OKR ™";
 			path = OpenInChrome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		790CE8551AFB2306007EF8B1 /* AtiimWeb */ = {
+		790CE8551AFB2306007EF8B1 /* Atiim OKR ™ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 790CE8751AFB2306007EF8B1 /* Build configuration list for PBXNativeTarget "AtiimWeb" */;
+			buildConfigurationList = 790CE8751AFB2306007EF8B1 /* Build configuration list for PBXNativeTarget "Atiim OKR ™" */;
 			buildPhases = (
 				790CE8521AFB2306007EF8B1 /* Sources */,
 				790CE8531AFB2306007EF8B1 /* Frameworks */,
@@ -80,9 +81,9 @@
 			);
 			dependencies = (
 			);
-			name = AtiimWeb;
+			name = "Atiim OKR ™";
 			productName = OpenInChromeSwiftSample;
-			productReference = 790CE8561AFB2306007EF8B1 /* AtiimWeb.app */;
+			productReference = 790CE8561AFB2306007EF8B1 /* Atiim OKR ™.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -93,7 +94,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Ce Zheng";
+				ORGANIZATIONNAME = TecSynt;
 				TargetAttributes = {
 					790CE8551AFB2306007EF8B1 = {
 						CreatedOnToolsVersion = 8.2;
@@ -102,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 790CE8511AFB2306007EF8B1 /* Build configuration list for PBXProject "OpenInChrome" */;
+			buildConfigurationList = 790CE8511AFB2306007EF8B1 /* Build configuration list for PBXProject "Atiim OKR ™" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -115,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				790CE8551AFB2306007EF8B1 /* AtiimWeb */,
+				790CE8551AFB2306007EF8B1 /* Atiim OKR ™ */,
 			);
 		};
 /* End PBXProject section */
@@ -255,7 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 7228BBSRBS;
 				HEADER_SEARCH_PATHS = (
@@ -266,7 +267,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/OpenInChrome/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.open.chrome.web;
+				PRODUCT_BUNDLE_IDENTIFIER = com.open.atiim.web;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -278,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 7228BBSRBS;
 				HEADER_SEARCH_PATHS = (
@@ -288,7 +290,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/OpenInChrome/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.open.chrome.web;
+				PRODUCT_BUNDLE_IDENTIFIER = com.open.atiim.web;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -299,7 +301,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		790CE8511AFB2306007EF8B1 /* Build configuration list for PBXProject "OpenInChrome" */ = {
+		790CE8511AFB2306007EF8B1 /* Build configuration list for PBXProject "Atiim OKR ™" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				790CE8731AFB2306007EF8B1 /* Debug */,
@@ -308,7 +310,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		790CE8751AFB2306007EF8B1 /* Build configuration list for PBXNativeTarget "AtiimWeb" */ = {
+		790CE8751AFB2306007EF8B1 /* Build configuration list for PBXNativeTarget "Atiim OKR ™" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				790CE8761AFB2306007EF8B1 /* Debug */,

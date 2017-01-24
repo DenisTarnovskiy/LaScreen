@@ -28,12 +28,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
         return statusBarStyle
     }
  
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    
-    if (webView.scrollView.contentOffset.y >= webView.scrollView.contentSize.height - webView.scrollView.frame.size.height) {
-        webView.scrollView.setContentOffset(CGPoint(x: webView.scrollView.contentOffset.x, y: webView.scrollView.contentSize.height - webView.scrollView.frame.size.height), animated: false)
-    }
-    }
+
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         if (scrollView.contentOffset.y < -60) {
             print("Reach Top")
@@ -41,51 +36,35 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
             if (self.webView.request != nil) {
                 webView.reload()
             } else {
-                let inputURL = URL(string: "https://demo-tecsynt.atiim.com")!
+                let inputURL = URL(string: "https://www.atiim.com")!
                 self.webView.loadRequest(URLRequest.init(url: inputURL))
             }
             
             let flag = self.isInternetAvailable()
             
             if flag {
-                if !self.popup.isHidden {
                     self.popup.isHidden = true
-                }
-              indicator.stopAnimating()
+
             } else {
                webView.stringByEvaluatingJavaScript(from: "document.open();document.close()")
 
-                if self.popup.isHidden {
 
                     self.popup.isHidden = false
-                }
             }
             }
           }
 
-    func webViewDidStartLoad(_ webView: UIWebView) {
-        indicator.stopAnimating();
-        //  popup.removeFromSuperview()
-        if !self.popup.isHidden {
-            self.popup.isHidden = true
-        }
-    }
 
-//    func webViewDidFinishLoad(_ webView: UIWebView) {
-//        indicator.stopAnimating();
-//      //  popup.removeFromSuperview()
-//        if !self.popup.isHidden {
-//            self.popup.isHidden = true
-//        }
-//    }
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        indicator.stopAnimating();
+     
+            self.popup.isHidden = true
+    }
     
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
-        indicator.stopAnimating();
         self.webView.stringByEvaluatingJavaScript(from: "document.open();document.close()")
 
-        if self.popup.isHidden {
             self.popup.isHidden = false
-        }
         
     }
     
@@ -113,7 +92,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate 
    func firstStartLauchScreen() {
         let flag = self.isInternetAvailable()
         if flag {
-            let inputURL = URL(string: "https://demo-tecsynt.atiim.com")!
+            let inputURL = URL(string: "https://www.atiim.com")!
             self.webView.loadRequest(URLRequest.init(url: inputURL))
             indicator.startAnimating();
         } else {
